@@ -285,7 +285,7 @@
  function log(anything) {
     console.log(anything);
  }
- 
+
 //  let myArray = new Array();
 //  let mySet = new Set();
 
@@ -297,14 +297,85 @@
 //  log(mySet);
 
 
-let myArray = [1,2,4];
+// let myArray = [1,2,4];
 
-let mySet = new Set(myArray);
+// let mySet = new Set(myArray);
 
 
 
-for(let value of mySet) {
-    log(value)
-}
+// for(let value of mySet) {
+//     log(value)
+// }
 
 // log([...mySet]);
+
+
+// let myArray = [1,2,3,4,5,6,7,8]
+
+// log([...new Set(myArray)]);
+
+
+// let a = new Set([1,2,3]);
+// let b = new Set([2,3,4])
+
+// let union = new Set([...a,...b]);
+// log(union);
+
+
+// let intersection = new Set([...a].filter(x => b.has
+//     (x)));
+//     log(intersection);
+
+
+
+// let difference = new Set([...a].filter(x => !b.has(x)));
+
+// log(difference);
+
+
+
+
+// widnow = global;
+
+
+
+// const language = {
+//     name :"javascript",
+//     creator : "Bredan Eich",
+//     library : {
+//         react :{
+//            company: 'Facebook'
+//         }
+//     }
+// }
+
+
+// let company = language?.library?.react?.company;
+// console.log(company)
+
+
+
+// let largest_number = Number.MAX_SAFE_INTEGER;
+
+// largest_number += 1;
+// largest_number = BigInt(largest_number) + 1n;
+// console.log(largest_number);
+
+// let colors = ['green','red','blue'];
+// colors = null;
+// console.log(colors?.[1]);
+
+
+// let lenguage; 
+// let lenguage1 = 'hi ia ';
+// console.log(lenguage ?? 'javascript');
+// console.log(lenguage || 'hi');
+
+
+const promise1 = new Promise(resolve => resolve('hi'));
+const promise2 = new Promise((reject) => reject('hello'));
+const promise3 = new Promise(resolve => resolve('how'));
+
+Promise.all([promise1, promise2,promise3])
+    .then(Response => console.log(Response))
+    .catch(error => console.log(error));
