@@ -161,12 +161,150 @@
 // console.log(result);
 
 
-var numbers = [1,2,3,4,5];
+// var numbers = [1,2,3,4,5];
 
-numbers.push([7,8,9]);
+// numbers.push([7,8,9]);
 
-console.log(numbers);
+// console.log(numbers);
+
+// var numbers = [1,2,3,4,5];
+ 
+
+// var result = numbers.map((num) => {
+//     return num*num
+// })
+
+// console.log(numbers);
+// console.log(result);
+
+
+// var numbers = [ 180,34,5];
+
+// var sum = numbers.reduce((prevValue,currenValue,currentIndex,arr) => {
+//     return prevValue - currenValue
+// },0);
+// console.log(sum); 
+
+
+//  const myObj = {
+//     name:'javascript',
+//     estd: 1995,
+//     founder: "Barden Eich"
+//  }
+
+
+//  for(property in myObj) {
+//     console.log(property);
+//  }
 
 
 
 
+//  const myObj = {
+//     name:'javascript',
+//     estd: 1995,
+//     founder: "Barden Eich",
+//     ranking:1
+//    }
+
+//    var keys = Object.keys(myObj);
+//    var values = Object.values(myObj);
+//     var entries = Object.entries(myObj);
+//    console.log(values);
+//    console.log(keys);
+//    console.log(entries);
+
+// function myFunc(x = 10) {
+//    return x;
+// }
+
+// console.log(myFunc(20));
+
+
+// function myFunc(a,...params){
+//     console.log(params);
+//     console.log(a);
+// }
+
+//  myFunc(4,5,6,7,8,9);
+
+
+
+
+//destructuring
+// const user = {
+//     id:345,
+//     name:"sagor",
+//     age:21,
+
+// }
+
+// const {name} = user;
+
+// console.log(name);
+
+
+// const user = {
+//     id:345,
+//     name:"sagor",
+//     age:21,
+    // education:{
+    //     degree:"masters",
+    // },
+
+// };
+
+// const {education :{degree } = {} } = user;
+
+//  console.log(degree);
+
+
+
+// var number = [1,2,[300,1,200],3,4,5,6];
+
+// var [,,[,a,b] ] = number;
+// console.log(a, b);
+
+
+
+
+// function modifier(strings, ...values) {
+//     const m =  strings.reduce((prev,current) => {
+//         return prev + current  + (values.length ? "Mr." + values.shift() : "")
+//     },"")
+//     return m;
+// };
+// var player1 = "sakib" ;
+// var player2 = "Tamim";
+
+
+// console.log(modifier`we have ${player1} and ${player2} in our cricket team`);
+
+
+
+ function log(anything) {
+    console.log(anything);
+ }
+ 
+//  let myArray = new Array();
+//  let mySet = new Set();
+
+//  mySet.add(5);
+
+//  mySet.add('bangladesh').add('sagor').add('hi').clear();
+//  log(mySet.has('bangladesh')) ;
+
+//  log(mySet);
+
+
+let myArray = [1,2,4];
+
+let mySet = new Set(myArray);
+
+
+
+for(let value of mySet) {
+    log(value)
+}
+
+// log([...mySet]);
