@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <header class="signup-header">
+            <h1>Signup</h1>
+          </header>
+          <form action="#">
+            <main class="signup-body">
+                <p> 
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" placeholder="Type Your Name" >
+                    <i class="fa-solid "></i>
+                    <span id="nameerror"> </span>
+                </p>
+                <p> 
+                    <label for="Email">Email</label>
+                    <input id="Email" type="text" placeholder="Write Email"  >
+                    <span class="emailerror"></span>
+                </p>
+                <p> 
+                    <label for="Password">Password</label>
+                    <input id="Password" type="text" placeholder="Password"  >
+                </p>
+                <p>
+                    <input type="submit" value="Create An Account" id="submitBtn" >
+                </p>
+              </main>
+          </form>
+     
+          <footer class="signup-footer">
+            <p>
+                Already Have An Account <a href="">Login</a>
+            </p>
+          </footer>
+        </div>
+    </div>
+</body>
+<script src="script.js" ></script>
+<script src="https://kit.fontawesome.com/61fe0d4f01.js" crossorigin="anonymous"></script>
+</html>
