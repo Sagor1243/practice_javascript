@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body{
+    background: white;
+    color: #000;
+    overflow: hidden;
+}
+.header{
+ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 10%; 
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(27, 21, 21);
+    cursor: pointer;
+}
+.navbar a { 
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:rgb(68, 59, 230);
+}
+
+.main{
+    min-height: 100vh;
+     background-color: white;
+    background-position: center;
+    transition: .3s ease;
+
+}
+
+.main.active{
+     filter: blur(10px);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 200%;
+}
+.home{
+    position: relative;
+    left: -50%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.home-content{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-content h1{
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgb(200, 198, 198);
+}
+.home-content p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.home-content .start-btn{
+    width: 230px;
+    height: 55px;
+    background: rgb(244, 231, 231);
+    color: rgb(9, 6, 6);
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin-top: 170px;
+    margin-right:-20px;
+    cursor: pointer;
+    
+}
+.home-content .start-btn:hover{
+    background:rgb(57, 50, 50);
+    color: white;
+}
+.popuop-info{
+    position:absolute ;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(.9);
+    width: 400px;
+    background-color: azure;
+    border-radius: 6px;
+    padding: 25px 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s ease;
+
+}
+.popuop-info.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(.9);
+
+}
+
+.popuop-info h2{
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+}
+.popuop-info .info{
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 10px;
+    padding: 15px 0 7px;
+}
+.popuop-info .btn-group .info-btn{
+    width: 130px;
+    height: 45px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(3, 2, 2);
+    outline: none;
+    border-radius: 6px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+} 
+.popuop-info .btn-group .info-btn:nth-child(1){
+   background: transparent;  
+   transition: .3s;
+}
+.popuop-info .btn-group .info-btn:nth-child(1):hover{
+    background-color: rgb(54, 71, 86);
+    color: #000;
+}
+.popuop-info .btn-group .info-btn:nth-child(2):hover{
+    background-color: rgb(54, 71, 86);
+    color: #000;
+}
+.quiz-section{
+    position: relative;
+    /* left: -50%; */
+    left: 0;
+    width: 100%;
+    background: black;
+    transition: .8s ease .25s;
+    z-index: 100;
+}
+.quiz-section.active{
+    left: 0;
+}
