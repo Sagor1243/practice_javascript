@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61fe0d4f01.js" crossorigin="anonymous"></script>
+    <title>Music_Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+             <nav>
+                <div class="circel">
+                    <i class="fa-solid fa-caret-left"></i>
+                </div>
+                <div class="circel">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+             </nav>
+             <img src="/images/images.jpeg" class="song-img">
+             <h2>Description</h2>
+             <p>Yeasin dhdhdh</p>
+
+           <audio   id="song">
+                   <source src="/mp3/mp3.mp3">
+           </audio>
+           <input type="range" value="0" id="progress" >
+           <div class="controls">
+            <div> <i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+           </div>
+        </div>
+             
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
