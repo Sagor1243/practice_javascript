@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',() => {
 const showTime =() => {
     let date = new Date();
 
-    let hr = date.getHours();
+    let hr = date.getHours() % 12 || 12;
     let min = date.getMinutes();
     let secs = date.getSeconds();
 

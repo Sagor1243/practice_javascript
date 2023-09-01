@@ -1,0 +1,20 @@
+.Clock{
+    width: 400px;
+    height: auto;
+    border: 1px solid balck;
+    border: 1px solid black;
+    margin: auto;
+    margin-top:300px ;
+}
+.Clock h1{
+    font-weight: 500;
+    color: rgb(75, 106, 134);
+    text-align: center;
+
+}
+.Clock p {
+    top: 0;
+    right: 0;
+    margin-bottom: 60px;
+    margi;
+}
