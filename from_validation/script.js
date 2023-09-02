@@ -6,10 +6,10 @@ const passworderror = document.getElementById('passworderror')
 submitBtn.addEventListener('click',(e) => {
     e.preventDefault();
 
-
     if(validateName() && validatEmail() && validpassword() ) {
         alert("form Submited succesfully")
     }
+
 });
 
 function validateName() {
@@ -48,21 +48,42 @@ function validatEmail() {
 
 
 function validpassword(){
+
     let password = document.getElementById('password').value;
-    if(password.length = 0) {
-        passworderror.innerHTML = "Password Is Required";
+    console.log(password);
+
+    if(password == '') {
+       
+        passworderror.innerHTML = "Password Is Required X";
         passworderror.previousElementSibling.classList.add('fa-xmark')
+    
         return false;
-    }
-    if(!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,30}$/)){
+    } else if(!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,30}$/)){
+
         passworderror.innerHTML = "Whrite a Valid Password"
         passworderror.previousElementSibling.classList.add("fa-xmark")
 
         return false
     }
+
     passworderror.innerHTML = "";
     passworderror.previousElementSibling.classList.add('fa-check')
     return true;
 
 }
+
+
+const showpass = document.getElementById('showpass');
+
+showpass.addEventListener('click',(event) => {
+
+    let password = document.getElementById('password')
+
+    if (password.type === "password") {
+        password.type = "text";
+      } else {
+        password.type = "password";
+      }
+
+})
  

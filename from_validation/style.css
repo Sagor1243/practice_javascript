@@ -39,6 +39,7 @@
     right: 16px;
     color: rgb(114, 251, 9);
     font-size: 22px;
+    cursor: pointer;
 } 
 .signup-body p span{
     text-align: center;
