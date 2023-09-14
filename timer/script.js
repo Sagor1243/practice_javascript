@@ -21,3 +21,5 @@ time.innerHTML = `${hr} : ${min} : ${secs}`
 
 timeformate.innerHTML =  hr> 12 ? "pM" : 'AM';
 }
+
+ 
