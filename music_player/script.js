@@ -27,6 +27,7 @@ if(song.play()){
 
 progress.onchange = function() {
     song.play();
+    progress.max = song.durration;
     song.currentTime = progress.value;
     ctrlicon.classList.add("fa-pause")
     ctrlicon.classList.remove("fa-play")
